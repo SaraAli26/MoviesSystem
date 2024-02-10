@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using MovieSystem.Infrastructure.Database;
+using MovieSystem.Infrastructure;
+using MovieSystem.Application;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +24,11 @@ builder.Services.AddDbContext<MovieDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
+
+builder.Services
+    .AddInfrastructureDependencies()
+    .AddApplicationDependeicies();
+
 
 var app = builder.Build();
 

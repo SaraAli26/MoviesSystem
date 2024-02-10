@@ -29,26 +29,36 @@ namespace MovieSystem.Infrastructure.Repositories.MovieRepositories
             return await _dbContext.Movies.ToListAsync();
         }
 
-        public async Task Add(Movie movie)
+        public async Task<Movie> Add(Movie movie)
         {
             _dbContext.Movies.Add(movie);
             await _dbContext.SaveChangesAsync();
+
+            return movie ;
         }
 
-        public async Task Update(Movie movie)
+        public async Task<Movie> Update(Movie movie)
         {
             _dbContext.Movies.Update(movie);
             await _dbContext.SaveChangesAsync();
+
+            return movie;
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
             var movie = await _dbContext.Movies.FindAsync(id);
             if (movie != null)
             {
                 _dbContext.Movies.Remove(movie);
                 await _dbContext.SaveChangesAsync();
+
+           
+
+                return true;
             }
+
+            return false;
         }
     }
 
