@@ -4,6 +4,7 @@ using MovieSystem.Infrastructure.Database;
 using MovieSystem.Infrastructure;
 using MovieSystem.Application;
 using System.Globalization;
+using MovieSystem.Application.Mapping.Movies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,7 @@ builder.Services
     .AddInfrastructureDependencies()
     .AddApplicationDependeicies();
 
+builder.Services.AddAutoMapper(typeof(MoviesMappingProfile));
 
 var app = builder.Build();
 

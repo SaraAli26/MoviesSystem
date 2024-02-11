@@ -26,7 +26,9 @@ namespace MovieSystem.Infrastructure.Repositories.MovieRepositories
 
         public async Task<IEnumerable<Movie>> GetAll()
         {
-            return await _dbContext.Movies.ToListAsync();
+           
+            var movies =  await _dbContext.Movies.ToListAsync();
+            return movies;
         }
 
         public async Task<Movie> Add(Movie movie)
