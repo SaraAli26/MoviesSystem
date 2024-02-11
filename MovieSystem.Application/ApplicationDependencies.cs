@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
-//using MovieSystem.Application.Behaviors;
 using MovieSystem.Infrastructure.Repositories;
-//using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using MovieSystem.Infrastructure.Repositories.MovieRepositories;

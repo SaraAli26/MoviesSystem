@@ -1,0 +1,103 @@
+1. Movie Management: 
+
+- Watch Movie :
+
+- Actor: User
+
+- Description: The can watch the movie.
+
+
+
+2. Category Management:
+
+- Add Category:
+
+- Actor: User
+
+- Description: The user creates a new category in the system.
+
+- Delete Category:
+
+- Actor: User
+
+- Description: The user deletes an existing category.
+
+- Update Category:
+
+- Actor: User
+
+- Description: The user updates the details of a category, including its name, description, and the list of associated movies.
+
+- View Category Details:
+
+- Actor: User
+
+- Description: The user views details of a category, including its name, description, and the list of associated movies.
+
+3. Rating:
+
+- Add Rating:
+
+- Actor: User
+
+- Description: The user adds a rating to a movie.
+
+- Display Movies with Highest Ratings:
+
+- Actor: User
+
+- Description: The user requests a list of movies with the highest ratings.
+
+4. Review:
+
+- Add Review:
+
+- Actor: User
+
+- Description: The user adds a review for a movie.
+
+- Update Review:
+
+- Actor: User
+
+- Description: The user updates an existing review.
+
+5. Like and Dislike:
+
+- Like a Movie:
+
+- Actor: User
+
+- Description: The user likes a movie.
+
+- Dislike a Movie:
+
+- Actor: User
+
+- Description: The user dislikes a movie.
+
+- Display Liked Movies:
+
+- Actor: User
+
+- Description: The user requests a list of movies they have liked.
+
+- Display Disliked Movies:
+
+- Actor: User
+
+- Description: The user requests a list of movies they have disliked.
+
+6. UserPaidMovies:
+
+- Pay for a Movie:
+
+- Actor: User
+
+- Description: The user pays for a movie.
+
+- Check Payment Status:
+
+- Actor: User
+
+- Description: The user checks if they have paid for a specific movie.
